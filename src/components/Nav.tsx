@@ -2,11 +2,10 @@ import { useState } from "react";
 import { siteConfig } from "@/site.config";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact-form" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
@@ -14,7 +13,6 @@ export default function Nav() {
 
   return (
     <>
-      {/* Skip to content */}
       <a
         href="#main-content"
         className="fixed left-2 top-2 z-[100] -translate-y-16 rounded-full bg-accent-green px-6 py-2 text-sm font-semibold text-bg-primary transition-transform focus:translate-y-0"
@@ -24,12 +22,10 @@ export default function Nav() {
 
       <header className="sticky top-0 z-50 border-b border-divider bg-bg-primary/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          {/* Logo */}
-          <a href="#" className="font-serif text-2xl tracking-wide text-text-heading md:text-3xl">
+          <a href="/" className="font-serif text-2xl tracking-wide text-text-heading md:text-3xl">
             TOSH
           </a>
 
-          {/* Desktop nav */}
           <nav className="hidden items-center gap-8 lg:flex">
             {NAV_LINKS.map((link) => (
               <a
@@ -42,7 +38,6 @@ export default function Nav() {
             ))}
           </nav>
 
-          {/* CTA */}
           <a
             href={siteConfig.acuityUrl}
             target="_blank"
@@ -52,7 +47,6 @@ export default function Nav() {
             BOOK A SESSION
           </a>
 
-          {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex flex-col gap-1.5 lg:hidden focus:outline-none focus:ring-2 focus:ring-accent-purple/50 rounded-sm p-1"
@@ -65,7 +59,6 @@ export default function Nav() {
           </button>
         </div>
 
-        {/* Mobile menu */}
         {mobileOpen && (
           <div className="border-t border-divider bg-bg-primary px-6 py-6 lg:hidden">
             <nav className="flex flex-col gap-4">

@@ -67,131 +67,93 @@ export default function ContactForm() {
     }
   };
 
+  const inputClasses =
+    "w-full rounded-lg border border-divider bg-bg-secondary px-4 py-3 text-text-primary placeholder:text-text-secondary/40 focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple";
+
   return (
-    <section id="contact-form" className="py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center">
-          <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
-            GET IN TOUCH
-          </span>
-          <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-            Send Me a Message
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-text-secondary">
-            Have a question before booking? Want to see if we're a good fit?
-            Drop me a line and I'll get back to you.
-          </p>
+    <form onSubmit={onSubmit} className="space-y-6">
+      <div className="grid gap-6 sm:grid-cols-2">
+        <div className="space-y-2">
+          <label htmlFor="name" className="text-sm font-medium text-text-secondary">
+            Name <span className="text-accent-purple">*</span>
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className={inputClasses}
+          />
         </div>
-
-        <form
-          onSubmit={onSubmit}
-          className="mx-auto mt-12 max-w-2xl space-y-6"
-        >
-          <div className="grid gap-6 sm:grid-cols-2">
-            {/* Name */}
-            <div className="space-y-2">
-              <label
-                htmlFor="name"
-                className="text-sm font-medium text-text-secondary"
-              >
-                Name <span className="text-accent-purple">*</span>
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full rounded-lg border border-divider bg-bg-secondary px-4 py-3 text-text-primary placeholder:text-text-secondary/40 focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple"
-              />
-            </div>
-
-            {/* Email */}
-            <div className="space-y-2">
-              <label
-                htmlFor="email"
-                className="text-sm font-medium text-text-secondary"
-              >
-                Email <span className="text-accent-purple">*</span>
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full rounded-lg border border-divider bg-bg-secondary px-4 py-3 text-text-primary placeholder:text-text-secondary/40 focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple"
-              />
-            </div>
-          </div>
-
-          {/* Phone */}
-          <div className="space-y-2">
-            <label
-              htmlFor="phone"
-              className="text-sm font-medium text-text-secondary"
-            >
-              Phone <span className="text-text-secondary/40">(optional)</span>
-            </label>
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="(555) 123-4567"
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full rounded-lg border border-divider bg-bg-secondary px-4 py-3 text-text-primary placeholder:text-text-secondary/40 focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple"
-            />
-          </div>
-
-          {/* Message */}
-          <div className="space-y-2">
-            <label
-              htmlFor="message"
-              className="text-sm font-medium text-text-secondary"
-            >
-              Message <span className="text-accent-purple">*</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="What's on your mind?"
-              rows={5}
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="w-full resize-none rounded-lg border border-divider bg-bg-secondary px-4 py-3 text-text-primary placeholder:text-text-secondary/40 focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple"
-            />
-          </div>
-
-          {/* Submit */}
-          <div className="text-center">
-            <button
-              type="submit"
-              disabled={submitStatus === "loading"}
-              className="inline-block rounded-full bg-accent-green px-10 py-3.5 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {submitStatus === "loading" ? "SENDING..." : "SEND MESSAGE"}
-            </button>
-          </div>
-
-          {/* Status feedback */}
-          {submitStatus === "success" && (
-            <p className="text-center text-sm text-accent-green">
-              Thanks! Your message was sent. I'll be in touch soon.
-            </p>
-          )}
-          {submitStatus === "error" && (
-            <p className="text-center text-sm text-red-400">
-              Something went wrong. Please try again.
-            </p>
-          )}
-        </form>
+        <div className="space-y-2">
+          <label htmlFor="email" className="text-sm font-medium text-text-secondary">
+            Email <span className="text-accent-purple">*</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className={inputClasses}
+          />
+        </div>
       </div>
-    </section>
+
+      <div className="space-y-2">
+        <label htmlFor="phone" className="text-sm font-medium text-text-secondary">
+          Phone <span className="text-text-secondary/40">(optional)</span>
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="(555) 123-4567"
+          value={formData.phone}
+          onChange={handleChange}
+          className={inputClasses}
+        />
+      </div>
+
+      <div className="space-y-2">
+        <label htmlFor="message" className="text-sm font-medium text-text-secondary">
+          Message <span className="text-accent-purple">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="What's on your mind?"
+          rows={5}
+          value={formData.message}
+          onChange={handleChange}
+          required
+          className={`${inputClasses} resize-none`}
+        />
+      </div>
+
+      <button
+        type="submit"
+        disabled={submitStatus === "loading"}
+        className="w-full rounded-full bg-accent-green px-10 py-3.5 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {submitStatus === "loading" ? "SENDING..." : "SEND MESSAGE"}
+      </button>
+
+      {submitStatus === "success" && (
+        <p className="text-center text-sm text-accent-green">
+          Thanks! Your message was sent. I'll be in touch soon.
+        </p>
+      )}
+      {submitStatus === "error" && (
+        <p className="text-center text-sm text-red-400">
+          Something went wrong. Please try again.
+        </p>
+      )}
+    </form>
   );
 }
