@@ -1,3 +1,5 @@
+import { siteConfig } from "@/site.config";
+
 export default function Hero() {
   return (
     <section className="relative flex min-h-[100vh] items-center justify-center overflow-hidden">
@@ -23,7 +25,9 @@ export default function Hero() {
         </p>
         <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href="#booking"
+            href={siteConfig.acuityUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-accent-green px-8 py-3.5 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_30px_rgba(0,200,83,0.3)]"
           >
             BOOK A FREE CALL

@@ -1,3 +1,5 @@
+import { siteConfig } from "@/site.config";
+
 export default function TopBar() {
   return (
     <div className="bg-bg-secondary border-b border-divider">
@@ -9,12 +11,12 @@ export default function TopBar() {
             </svg>
             Columbus, OH & Available Virtually
           </span>
-          <span className="hidden items-center gap-2 sm:flex">
+          <a href={`mailto:${siteConfig.email}`} className="hidden items-center gap-2 transition-colors hover:text-accent-purple sm:flex">
             <svg className="h-4 w-4 text-accent-purple" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
             </svg>
-            hello@tosh.com
-          </span>
+            {siteConfig.email}
+          </a>
         </div>
         <div className="flex items-center gap-4">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent-purple">

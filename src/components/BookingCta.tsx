@@ -1,3 +1,5 @@
+import { siteConfig } from "@/site.config";
+
 export default function BookingCta() {
   return (
     <section id="booking" className="relative overflow-hidden py-24 md:py-32">
@@ -15,7 +17,9 @@ export default function BookingCta() {
           and where you want to be.
         </p>
         <a
-          href="#"
+          href={siteConfig.acuityUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-10 inline-block rounded-full bg-accent-green px-10 py-4 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_30px_rgba(0,200,83,0.3)]"
         >
           SCHEDULE YOUR CALL
