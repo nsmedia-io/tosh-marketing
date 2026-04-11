@@ -1,14 +1,12 @@
 const NAV_LEFT = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 const NAV_RIGHT = [
   { label: "Booking", href: "#booking" },
-  { label: "Contact", href: "#contact" },
-  { label: "Privacy Policy", href: "#" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -33,7 +31,7 @@ export default function Footer() {
               </a>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-              Empowerment built on lived experience, not buzzwords.
+              Empowerment built on lived experience.
             </p>
           </div>
 
