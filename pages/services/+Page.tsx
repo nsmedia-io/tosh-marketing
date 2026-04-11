@@ -16,7 +16,7 @@ function ServiceCards() {
         </svg>
       ),
       title: "Classes & Workshops",
-      desc: "Dynamic, stigma-free education for those hungry to learn. From kink skills to relationship strategy to radical self-knowledge, I teach immersive workshops online and in-person.",
+      desc: "Judgment-free, no-nonsense education for people who want real answers. From kink fundamentals to relationship strategy to self-discovery, I run immersive workshops online and in-person.",
       anchor: "#workshops",
     },
     {
@@ -26,7 +26,7 @@ function ServiceCards() {
         </svg>
       ),
       title: "Private Coaching",
-      desc: "1:1 support tailored to your journey. Whether you're navigating relationships, exploring power dynamics, or leveling up your career, my coaching combines practical insight with fierce empathy.",
+      desc: "Personalized guidance built around your goals. Whether you're untangling relationship patterns, stepping into power dynamics, or scaling your career, I bring sharp strategy and genuine care to every session.",
       anchor: "#coaching",
     },
     {
@@ -36,7 +36,7 @@ function ServiceCards() {
         </svg>
       ),
       title: "Speaking & Keynotes",
-      desc: "Authentic storytelling meets informed disruption. Keynotes, panels, and consulting that challenge stigma, ignite change, and amplify voices too often left unheard.",
+      desc: "Real stories, sharp analysis, and zero sugarcoating. Keynotes, panels, and consulting engagements that confront stigma head-on and center the perspectives that mainstream spaces keep ignoring.",
       anchor: "#speaking",
     },
   ];
@@ -139,21 +139,22 @@ function WorkshopsSection() {
               CLASSES & WORKSHOPS
             </span>
             <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-              Radically Honest.
+              Blunt. Warm.
               <br />
-              <span className="italic">Fiercely Educational.</span>
+              <span className="italic">Actually Useful.</span>
             </h2>
             <div className="mt-8 space-y-4 text-lg leading-relaxed text-text-secondary">
               <p>
-                I don't just teach. I make concepts accessible and approachable.
-                I create spaces where people feel safe enough to ask real
-                questions, examine their assumptions, and step into new versions
-                of themselves.
+                I don't lecture. I break things down until they click. I build
+                rooms where people feel safe enough to ask the questions
+                they've been sitting on for years, challenge their own
+                assumptions, and walk out different than they walked in.
               </p>
               <p>
-                My workshops blend evidence-based tools with lived wisdom,
-                delivered with clarity, candor, and just enough bite to keep it
-                interesting. Your liberation begins with understanding.
+                My workshops combine research-backed frameworks with
+                hard-earned personal experience, delivered with warmth, honesty,
+                and enough edge to keep you paying attention. Growth starts
+                with understanding.
               </p>
             </div>
             <a
@@ -485,9 +486,9 @@ function SpeakingSection() {
               PUBLIC SPEAKING & KEYNOTES
             </span>
             <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-              Honest. Unapologetic.
+              Direct. Unfiltered.
               <br />
-              <span className="italic">Unforgettable.</span>
+              <span className="italic">Impossible to Ignore.</span>
             </h2>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-text-secondary">
               <p>
@@ -628,8 +629,8 @@ export default function Page() {
     <>
       <PageHero
         eyebrow="CLASSES & COACHING"
-        title="Teaching From the Edge of Experience"
-        subtitle="I believe in education as transformation, in consent as creative power, and in our ability to change the world through intimacy, integrity, and connection. I don't just teach from theory. I teach from the battlefield."
+        title="Built on What I've Lived, Not What I've Read"
+        subtitle="I see education as a catalyst for real change. Consent as something you practice, not just preach. Connection as the foundation everything else is built on. My curriculum comes from years in the trenches, not a syllabus."
       />
 
       <ServiceCards />

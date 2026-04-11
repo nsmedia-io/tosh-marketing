@@ -34,24 +34,25 @@ function ProfessionalIdentity() {
         <ImagePlaceholder label="Professional portrait" aspect="aspect-[3/4]" src={portraits.about1} />
         <div className="flex flex-col justify-center">
           <span className="text-xs font-semibold tracking-[0.3em] text-accent-purple">
-            THIS IS AUTHORITY
+            WHO I AM
           </span>
           <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
             Professional Dominatrix
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-text-secondary">
-            I am a professional dominatrix known not just for my skill in
-            session, but for my presence. Intellectual, commanding, and fiercely
-            self-possessed. My clients don't come to me for tired power plays.
-            They come for transformation. For immersion. For the kind of clarity
-            that only comes from surrendering to someone who understands the
-            erotic and the psychological in equal measure.
+            I am a professional dominatrix recognized for far more than
+            technique. My reputation is built on presence: sharp, deliberate,
+            and completely self-assured. People don't seek me out for
+            surface-level thrills. They come because they want to be genuinely
+            changed. They want depth, immersion, and the rare experience of
+            being held by someone who reads both body and mind with equal
+            fluency.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-text-secondary">
-            My work is deeply intuitive, built on years of skill, study, and
-            lived experience. Every scene I conduct is intentional and exacting.
-            Whether I'm weaving ritual, control, fantasy, or discipline, the
-            outcome is always the same: I leave an imprint.
+            Everything I do is rooted in years of study, practice, and personal
+            evolution. Every scene is crafted with intention. Whether the
+            medium is ritual, restraint, fantasy, or discipline, the result
+            speaks for itself: people don't forget me.
           </p>
           <Stats />
         </div>
@@ -67,31 +68,30 @@ function Journey() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
           <div>
             <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
-              A HISTORY OF POWER
+              HOW I GOT HERE
             </span>
             <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
               My Journey
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-text-secondary">
               <p>
-                I've shaped my life around power. Not just wielding it, but
-                studying it, refining it, becoming it. My journey into
-                professional domination was marked by total immersion. I
-                committed myself to learning every aspect of the craft: the
-                psychology of control, the elegance of restraint, the mechanics
-                of pain and praise.
+                I've organized my entire life around understanding power. Not
+                just exercising it, but dissecting it, sharpening it, embodying
+                it. My path into professional domination was one of complete
+                dedication. I threw myself into mastering the craft from every
+                angle: the psychology behind surrender, the art of tension, the
+                balance between pain and trust.
               </p>
               <p>
-                While others played with power, I studied it. I immersed myself
-                in the rituals, tools, and emotional mechanics of domination. I
-                learned to bend desire, fear, and reverence into a single
-                glance.
+                Where others dabbled, I went deep. I studied the emotional
+                architecture of dominance. I trained my instincts until I could
+                shift someone's entire state with a look.
               </p>
               <p>
-                I am not interested in being palatable. I'm not here to dilute
-                my experience for anyone's comfort. My work is about creating
-                space for people to remember themselves. To return to their
-                bodies. To reclaim their worth.
+                I have zero interest in being easy to swallow. I refuse to water
+                down what I know to make anyone more comfortable. What I do is
+                create room for people to reconnect with themselves. To land
+                back in their bodies. To stop apologizing for what they want.
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ function MidPageCta() {
       <div className="absolute inset-0 bg-gradient-to-r from-accent-purple/5 via-bg-primary to-accent-green/5" />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <h3 className="font-serif text-3xl text-text-heading md:text-4xl">
-          Looking to Make an Appointment?
+          Ready to Work Together?
         </h3>
         <p className="mt-4 text-text-secondary">
           Sessions, coaching, consults, and more.
@@ -143,20 +143,22 @@ function Philosophy() {
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-text-secondary">
               <p>
-                Power with, not power over. Storytelling as dominance. Pleasure
-                as liberation. Whether I'm standing behind a camera or across
-                the room from a kneeling submissive, my work is about creating
-                worlds where people feel seen in their complexity.
+                Collaboration over coercion. Narrative as a tool of control.
+                Desire as a path to freedom. Whether I'm behind a lens or
+                standing over someone on their knees, my purpose is the same:
+                to build worlds where people are witnessed in their full
+                complexity.
               </p>
               <p>
-                As a Dominant, I'm not here to reenact tired tropes. I'm here to
-                wield power with precision, empathy, and purpose. To use
-                discipline, ritual, and sensation as tools for uncovering the
-                truth beneath the performance.
+                As a Dominant, I have no patience for worn-out cliches. I bring
+                intention, empathy, and surgical precision to every dynamic. I
+                use structure, ritual, and sensation to strip away the mask and
+                get to what's real underneath.
               </p>
               <p>
-                What I seek isn't compliance. It's devotion. Not from a place of
-                shame or scarcity, but from agency, clarity, and trust.
+                I'm not looking for obedience. I'm looking for surrender that
+                comes from a place of strength, self-awareness, and genuine
+                choice.
               </p>
             </div>
           </div>
@@ -174,17 +176,17 @@ function Advocacy() {
     {
       eyebrow: "COACHING",
       title: "Coaching for Connection",
-      desc: "Power isn't just play. It's communication. It's nervous system literacy. It's knowing how to be both vulnerable and accountable. I work with individuals and couples navigating kink, dynamics, desire, and relationship structures. Whether you're just starting to explore or rebuilding trust after rupture, I bring a trauma-aware, pleasure-positive lens.",
+      desc: "Power dynamics don't stop at the dungeon door. They shape how we communicate, fight, love, and heal. I work with individuals and couples navigating kink, desire, and relationship structures with a trauma-informed, pleasure-centered approach. Whether you're brand new or rebuilding after a rupture, I meet you where you are.",
     },
     {
       eyebrow: "ADVOCACY",
       title: "Sex Work Education & Advocacy",
-      desc: "Sex work is work. But it's also strategy, structure, emotional labor, and survival. My coaching for sex workers is designed for those who are tired of spinning their wheels and ready to build something sustainable. From pricing and client engagement to burnout prevention and business systems, I teach what I live.",
+      desc: "This industry requires more than hustle. It demands strategy, emotional resilience, and systems that actually protect you. My coaching for sex workers is built for people ready to stop surviving and start building. Pricing, boundaries, burnout, business infrastructure. I teach from experience, not textbooks.",
     },
     {
       eyebrow: "COMMUNITY",
       title: "Community & Mutual Aid",
-      desc: "I believe in building the infrastructure I couldn't find when I needed it most. Community-powered support for queer folks, sex workers, and creatives. Classes, events, and mutual aid for those who live at the edges of power, because that's where change begins.",
+      desc: "I'm committed to creating the support systems I wish existed when I was starting out. Grassroots resources for queer folks, sex workers, and creatives. Education, events, and mutual aid for people who have always had to build their own safety nets.",
     },
   ];
 
@@ -193,17 +195,16 @@ function Advocacy() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
-            BEYOND THE FANTASY
+            MORE THAN THE SCENE
           </span>
           <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-            Advocate. Educate. Disrupt. Repeat.
+            Teach. Organize. Challenge. Build.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-text-secondary">
-            Whether I'm guiding someone through the nuance of kink and
-            communication, helping a sex worker build a real business, or
-            standing in front of a room teaching consent from lived experience, I
-            bring the same thing every time: clarity, precision, and zero
-            performative fluff.
+            Whether I'm walking someone through the nuances of power exchange,
+            helping a creator build a sustainable business, or speaking to a
+            room about consent and identity, I show up the same way every time:
+            direct, prepared, and allergic to empty buzzwords.
           </p>
         </div>
 
@@ -234,9 +235,9 @@ export default function Page() {
   return (
     <>
       <PageHero
-        eyebrow="ABOUT THE GODDESS"
-        title="Domina. Creator. Educator. Visionary."
-        subtitle="I've spent years commanding attention, from the dungeon to the digital sphere to the front lines of sex-positive advocacy. I am a complex, multi-faceted human with a deep wealth of knowledge and lived experience. I'm a dominatrix. A creator. An educator. A visionary."
+        eyebrow="ABOUT ME"
+        title="Educator. Provocateur. Builder. Boss."
+        subtitle="I've spent years commanding rooms, reshaping perspectives, and building a career at the intersection of kink, empowerment, and advocacy. I am a dominatrix, a coach, an educator, and a relentless advocate for the people this world tries hardest to silence."
       />
 
       <PhotoGallery
