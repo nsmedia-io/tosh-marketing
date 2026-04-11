@@ -3,7 +3,7 @@
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#9B30FF"/>
-      <stop offset="100%" stop-color="#00C853"/>
+      <stop offset="100%" stop-color="#2D6A4F"/>
     </linearGradient>
   </defs>
   <text x="32" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-weight="bold" fill="url(#g)">T</text>

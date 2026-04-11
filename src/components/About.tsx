@@ -15,7 +15,7 @@ export default function About() {
           </h2>
           <a
             href="#booking"
-            className="mt-8 inline-block w-fit rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)]"
+            className="mt-8 inline-block w-fit rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
           >
             KNOW MORE
           </a>

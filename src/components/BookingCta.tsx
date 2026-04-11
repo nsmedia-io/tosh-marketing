@@ -20,7 +20,7 @@ export default function BookingCta() {
           href={siteConfig.acuityUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-10 inline-block rounded-full bg-accent-green px-10 py-4 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_30px_rgba(0,200,83,0.3)]"
+          className="mt-10 inline-block rounded-full bg-accent-green px-10 py-4 text-sm font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_30px_rgba(45,106,79,0.3)]"
         >
           SCHEDULE YOUR CALL
         </a>

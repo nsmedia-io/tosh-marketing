@@ -15,7 +15,7 @@ export default function Nav() {
     <>
       <a
         href="#main-content"
-        className="fixed left-2 top-2 z-[100] -translate-y-16 rounded-full bg-accent-green px-6 py-2 text-sm font-semibold text-bg-primary transition-transform focus:translate-y-0"
+        className="fixed left-2 top-2 z-[100] -translate-y-16 rounded-full bg-accent-green px-6 py-2 text-sm font-semibold text-text-heading transition-transform focus:translate-y-0"
       >
         Skip to content
       </a>
@@ -42,7 +42,7 @@ export default function Nav() {
             href={siteConfig.acuityUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-accent-green px-6 py-2.5 text-xs font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)] focus:outline-none focus:ring-2 focus:ring-accent-green/50 focus:ring-offset-2 focus:ring-offset-bg-primary lg:inline-block"
+            className="hidden rounded-full bg-accent-green px-6 py-2.5 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)] focus:outline-none focus:ring-2 focus:ring-accent-green/50 focus:ring-offset-2 focus:ring-offset-bg-primary lg:inline-block"
           >
             BOOK A SESSION
           </a>
@@ -77,7 +77,7 @@ export default function Nav() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 inline-block rounded-full bg-accent-green px-6 py-2.5 text-center text-xs font-semibold tracking-[0.15em] text-bg-primary"
+                className="mt-2 inline-block rounded-full bg-accent-green px-6 py-2.5 text-center text-xs font-semibold tracking-[0.15em] text-text-heading"
               >
                 BOOK A SESSION
               </a>

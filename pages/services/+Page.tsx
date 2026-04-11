@@ -158,7 +158,7 @@ function WorkshopsSection() {
             </div>
             <a
               href="/contact"
-              className="mt-8 inline-block rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)]"
+              className="mt-8 inline-block rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
             >
               INQUIRE ABOUT CLASSES
             </a>
@@ -258,7 +258,7 @@ function MidCta({
           href={href}
           target={href.startsWith("http") ? "_blank" : undefined}
           rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-          className="mt-8 inline-block rounded-full bg-accent-green px-8 py-3.5 text-xs font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)]"
+          className="mt-8 inline-block rounded-full bg-accent-green px-8 py-3.5 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
         >
           {label}
         </a>
@@ -355,7 +355,7 @@ function CoachingSection() {
               href={siteConfig.acuityUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)]"
+              className="inline-block rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
             >
               BOOK YOUR CONSULTATION
             </a>
@@ -437,7 +437,7 @@ function CoachingSection() {
               href={siteConfig.acuityUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)]"
+              className="inline-block rounded-full bg-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
             >
               BOOK YOUR CONSULTATION
             </a>
@@ -532,7 +532,7 @@ function SpeakingSection() {
 
             <a
               href="/contact"
-              className="mt-8 inline-block rounded-full border border-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-accent-green transition-all hover:bg-accent-green hover:text-bg-primary"
+              className="mt-8 inline-block rounded-full border border-accent-green px-8 py-3 text-xs font-semibold tracking-[0.15em] text-accent-green transition-all hover:bg-accent-green hover:text-text-heading"
             >
               EMAIL TO INQUIRE
             </a>
@@ -612,7 +612,7 @@ function BottomCta() {
           href={siteConfig.acuityUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-10 inline-block rounded-full bg-accent-green px-10 py-4 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_30px_rgba(0,200,83,0.3)]"
+          className="mt-10 inline-block rounded-full bg-accent-green px-10 py-4 text-sm font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_30px_rgba(45,106,79,0.3)]"
         >
           SCHEDULE YOUR CALL
         </a>

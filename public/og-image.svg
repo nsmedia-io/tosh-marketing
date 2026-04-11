@@ -4,7 +4,7 @@
     <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#9B30FF" stop-opacity="0.15"/>
       <stop offset="50%" stop-color="#0A0A0A" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#00C853" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#2D6A4F" stop-opacity="0.15"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#glow)"/>

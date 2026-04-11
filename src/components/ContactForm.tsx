@@ -139,7 +139,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={submitStatus === "loading"}
-        className="w-full rounded-full bg-accent-green px-10 py-3.5 text-sm font-semibold tracking-[0.15em] text-bg-primary transition-all hover:shadow-[0_0_20px_rgba(0,200,83,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full rounded-full bg-accent-green px-10 py-3.5 text-sm font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {submitStatus === "loading" ? "SENDING..." : "SEND MESSAGE"}
       </button>
