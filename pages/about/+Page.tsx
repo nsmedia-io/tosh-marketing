@@ -2,8 +2,7 @@ import PageHero from "@/components/PageHero";
 import Divider from "@/components/Divider";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import PhotoGallery from "@/components/PhotoGallery";
-import { siteConfig } from "@/site.config";
-import { portraits, gallery } from "@/images.config";
+import { about } from "@/images.config";
 
 function Stats() {
   const stats = [
@@ -31,28 +30,23 @@ function ProfessionalIdentity() {
   return (
     <section className="py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:gap-16 lg:gap-24">
-        <ImagePlaceholder label="Professional portrait" aspect="aspect-[3/4]" src={portraits.about1} />
+        <ImagePlaceholder label="Professional portrait" aspect="aspect-[3/4]" src={about.portrait} />
         <div className="flex flex-col justify-center">
           <span className="text-xs font-semibold tracking-[0.3em] text-accent-purple">
             WHO I AM
           </span>
           <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-            Professional Dominatrix
+            A Way of Life
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-text-secondary">
-            I am a professional dominatrix recognized for far more than
-            technique. My reputation is built on presence: sharp, deliberate,
-            and completely self-assured. People don't seek me out for
-            surface-level thrills. They come because they want to be genuinely
-            changed. They want depth, immersion, and the rare experience of
-            being held by someone who reads both body and mind with equal
-            fluency.
+            Domination isn't something I step into, it's my way of life. I find
+            profound fulfillment in guiding others as they explore their
+            deepest, most intimate fantasies.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-text-secondary">
-            Everything I do is rooted in years of study, practice, and personal
-            evolution. Every scene is crafted with intention. Whether the
-            medium is ritual, restraint, fantasy, or discipline, the result
-            speaks for itself: people don't forget me.
+            With care and intention, I take pride in helping submissives safely
+            expand their boundaries and discover new depths of headspace and
+            self-awareness.
           </p>
           <Stats />
         </div>
@@ -68,36 +62,33 @@ function Journey() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
           <div>
             <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
-              HOW I GOT HERE
+              WHAT FASCINATES ME
             </span>
             <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-              My Journey
+              Drawn to the Strange and Unconventional
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-text-secondary">
               <p>
-                I've organized my entire life around understanding power. Not
-                just exercising it, but dissecting it, sharpening it, embodying
-                it. My path into professional domination was one of complete
-                dedication. I threw myself into mastering the craft from every
-                angle: the psychology behind surrender, the art of tension, the
-                balance between pain and trust.
+                I've always been drawn to the strange and unconventional. Places
+                like the Mütter Museum and immersive science exhibits have long
+                captured my curiosity.
               </p>
               <p>
-                Where others dabbled, I went deep. I studied the emotional
-                architecture of dominance. I trained my instincts until I could
-                shift someone's entire state with a look.
+                My academic background centers on science, psychology, and crime
+                scene analysis — fields I continue to explore and deepen my
+                understanding of.
               </p>
               <p>
-                I have zero interest in being easy to swallow. I refuse to water
-                down what I know to make anyone more comfortable. What I do is
-                create room for people to reconnect with themselves. To land
-                back in their bodies. To stop apologizing for what they want.
+                I'm particularly fascinated by the psychology of fetishes: what
+                drives a fixation, how the mind forms these connections, and the
+                subtle triggers that bring them to life. Unraveling those layers
+                is endlessly intriguing to me.
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-6">
-            <ImagePlaceholder label="Session photo" aspect="aspect-[4/5]" src={portraits.session1} />
-            <ImagePlaceholder label="Teaching photo" aspect="aspect-[4/3]" src={portraits.speaking} />
+            <ImagePlaceholder label="Session photo" aspect="aspect-[4/5]" src={about.session} />
+            <ImagePlaceholder label="Teaching photo" aspect="aspect-[4/3]" src={about.teaching} />
           </div>
         </div>
       </div>
@@ -111,15 +102,13 @@ function MidPageCta() {
       <div className="absolute inset-0 bg-gradient-to-r from-accent-purple/5 via-bg-primary to-accent-green/5" />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <h3 className="font-serif text-3xl text-text-heading md:text-4xl">
-          Ready to Work Together?
+          Ready to Explore?
         </h3>
         <p className="mt-4 text-text-secondary">
-          Sessions, coaching, consults, and more.
+          Open communication. Mutual chemistry. Real connection.
         </p>
         <a
-          href={siteConfig.acuityUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/booking"
           className="mt-8 inline-block rounded-full bg-accent-green px-8 py-3.5 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
         >
           BOOK AN APPOINTMENT
@@ -136,36 +125,185 @@ function Philosophy() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
           <div>
             <span className="text-xs font-semibold tracking-[0.3em] text-accent-purple">
-              WHAT MAKES ME DIFFERENT
+              HOW I WORK
             </span>
             <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
-              My Philosophy
+              Direct, Curious, Unapologetic
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-text-secondary">
               <p>
-                Collaboration over coercion. Narrative as a tool of control.
-                Desire as a path to freedom. Whether I'm behind a lens or
-                standing over someone on their knees, my purpose is the same:
-                to build worlds where people are witnessed in their full
-                complexity.
+                I thrive on energy, clarity, and direct communication. As a
+                Dominant, I'm deeply passionate about fostering personal growth,
+                creating meaningful connections, and elevating expectations.
               </p>
               <p>
-                As a Dominant, I have no patience for worn-out cliches. I bring
-                intention, empathy, and surgical precision to every dynamic. I
-                use structure, ritual, and sensation to strip away the mask and
-                get to what's real underneath.
+                I hold a genuine appreciation for BDSM and kink in every form:
+                from the most vanilla desires to the truly wild and unique. I
+                actively seek out unique experiences and new adventures, always
+                eager to explore whatever excites you.
               </p>
               <p>
-                I'm not looking for obedience. I'm looking for surrender that
-                comes from a place of strength, self-awareness, and genuine
-                choice.
+                If you can communicate your needs openly and honestly, I'm
+                confident we'll connect beautifully, whether your desires feel
+                ordinary or deliciously bizarre.
               </p>
             </div>
           </div>
           <div className="flex flex-col justify-center">
-            <ImagePlaceholder label="Artistic portrait" aspect="aspect-square" src={portraits.about2} />
+            <ImagePlaceholder label="Artistic portrait" aspect="aspect-square" src={about.artistic} />
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function CoreSpecialties() {
+  const items = [
+    "Medical",
+    "Impact scenes",
+    "Corporal punishment (OTK, spanking, paddling, caning)",
+    "Humiliation play",
+    "CBT / ballbusting and kicking",
+    "Bisexual and homosexual fantasy play",
+    "Slave training",
+  ];
+  return (
+    <section className="py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="text-center">
+          <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
+            CORE SPECIALTIES
+          </span>
+          <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
+            What I'm Known For
+          </h2>
+        </div>
+        <ul className="mx-auto mt-16 grid max-w-4xl gap-3 sm:grid-cols-2">
+          {items.map((item, i) => (
+            <li
+              key={item}
+              className="flex items-baseline gap-4 rounded-2xl border border-divider bg-bg-secondary px-6 py-5"
+            >
+              <span className="font-serif text-sm text-accent-purple">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="text-base text-text-primary">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+function InterestsLink() {
+  return (
+    <section className="py-16">
+      <div className="mx-auto max-w-3xl px-6 text-center">
+        <p className="text-text-secondary">
+          Beyond my core specialties, I have a wide range of interests across
+          sensation, bondage, fetish, and fantasy play.
+        </p>
+        <a
+          href="/about/interests"
+          className="mt-6 inline-flex items-center gap-2 text-xs font-semibold tracking-[0.15em] text-accent-green transition-colors hover:text-accent-purple"
+        >
+          VIEW THE FULL LIST OF INTERESTS
+          <svg
+            className="h-4 w-4 transition-transform group-hover:translate-x-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+  );
+}
+
+function ByRequest() {
+  const items = [
+    "ABDL play & age regression",
+    "Tickling",
+    "Smothering and clothed face-sitting",
+    "Spit showers",
+  ];
+  return (
+    <section className="py-24 md:py-32">
+      <div className="mx-auto max-w-3xl px-6 text-center">
+        <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
+          BY REQUEST
+        </span>
+        <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
+          By Chemistry & Negotiation
+        </h2>
+        <p className="mt-6 text-text-secondary">
+          Open to these by request and individual chemistry.
+        </p>
+        <ul className="mt-10 flex flex-wrap justify-center gap-3">
+          {items.map((item) => (
+            <li
+              key={item}
+              className="rounded-full border border-divider bg-bg-secondary px-5 py-2.5 text-sm text-text-primary"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+function Limits() {
+  const items = [
+    'Sexual contact, nudity requests, or "jobs" of any kind',
+    "Bare bottom worship, breast smothering, or intimate body worship",
+    "Illegal activity of any kind",
+    "Scenes focused on only tease and denial",
+    "Suspension rope bondage",
+    "Non-negotiated brat play",
+    "Non-negotiated dynamics",
+    "Switching or bottoming roles in any capacity",
+    "Bathroom play",
+    "Roman showers",
+    "Sweat worship",
+  ];
+  return (
+    <section className="py-24 md:py-32">
+      <div className="mx-auto max-w-4xl px-6">
+        <div className="text-center">
+          <span className="text-xs font-semibold tracking-[0.3em] text-accent-purple">
+            HARD LIMITS
+          </span>
+          <h2 className="mt-3 font-serif text-4xl text-text-heading md:text-5xl">
+            Limits & Areas of Disinterest
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-text-secondary">
+            Non-negotiable. Don't ask.
+          </p>
+        </div>
+        <ul className="mt-12 grid gap-3 md:grid-cols-2">
+          {items.map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-3 rounded-2xl border border-divider bg-bg-secondary px-6 py-4"
+            >
+              <svg className="mt-1 h-4 w-4 flex-shrink-0 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+              <span className="text-text-primary">{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -237,16 +375,16 @@ export default function Page() {
       <PageHero
         eyebrow="ABOUT ME"
         title="Educator. Provocateur. Builder. Boss."
-        subtitle="I've spent years commanding rooms, reshaping perspectives, and building a career at the intersection of kink, empowerment, and advocacy. I am a dominatrix, a coach, an educator, and a relentless advocate for the people this world tries hardest to silence."
+        subtitle="Direct, curious, and intentional. A Dominant who finds profound fulfillment in guiding others through their deepest, most intimate fantasies."
       />
 
       <PhotoGallery
         images={[
-          { label: "Editorial 1", src: gallery.g1 },
-          { label: "Session vibe", src: gallery.g2 },
-          { label: "Studio portrait", src: gallery.g3 },
-          { label: "Lifestyle shot", src: gallery.g4 },
-          { label: "Candid moment", src: gallery.g5 },
+          { label: "Editorial 1", src: about.galleryTop[0] },
+          { label: "Session vibe", src: about.galleryTop[1] },
+          { label: "Studio portrait", src: about.galleryTop[2] },
+          { label: "Lifestyle shot", src: about.galleryTop[3] },
+          { label: "Candid moment", src: about.galleryTop[4] },
         ]}
       />
 
@@ -256,14 +394,19 @@ export default function Page() {
       <MidPageCta />
       <Divider />
       <Philosophy />
+      <Divider />
+      <CoreSpecialties />
+      <InterestsLink />
+      <ByRequest />
+      <Limits />
 
       <PhotoGallery
         images={[
-          { label: "Behind the scenes", src: gallery.g6 },
-          { label: "Workshop photo", src: gallery.g7 },
-          { label: "Artistic shot", src: gallery.g8 },
-          { label: "Event photo", src: gallery.g9 },
-          { label: "Power portrait", src: gallery.g10 },
+          { label: "Behind the scenes", src: about.galleryBottom[0] },
+          { label: "Workshop photo", src: about.galleryBottom[1] },
+          { label: "Artistic shot", src: about.galleryBottom[2] },
+          { label: "Event photo", src: about.galleryBottom[3] },
+          { label: "Power portrait", src: about.galleryBottom[4] },
         ]}
       />
 

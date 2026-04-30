@@ -1,11 +1,13 @@
 const NAV_LEFT = [
   { label: "About", href: "/about" },
+  { label: "Interests", href: "/about/interests" },
   { label: "Services", href: "/services" },
   { label: "FAQ", href: "/faq" },
 ];
 
 const NAV_RIGHT = [
-  { label: "Booking", href: "#booking" },
+  { label: "Booking", href: "/booking" },
+  { label: "Etiquette", href: "/etiquette" },
   { label: "Contact", href: "/contact" },
 ];
 

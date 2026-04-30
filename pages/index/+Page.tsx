@@ -4,13 +4,13 @@ import Testimonials from "@/components/Testimonials";
 import PhotoGallery from "@/components/PhotoGallery";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { siteConfig } from "@/site.config";
-import { portraits, gallery } from "@/images.config";
+import { home } from "@/images.config";
 
 function AboutTeaser() {
   return (
     <section className="py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:gap-16 lg:gap-24">
-        <ImagePlaceholder label="Portrait" aspect="aspect-[3/4]" src={portraits.hero1} />
+        <ImagePlaceholder label="Portrait" aspect="aspect-[3/4]" src={home.hero} />
         <div className="flex flex-col justify-center">
           <span className="text-xs font-semibold tracking-[0.3em] text-accent-purple">
             MEET YOUR GUIDE
@@ -138,11 +138,11 @@ export default function Page() {
       <Hero />
       <PhotoGallery
         images={[
-          { label: "Hero shot 1", src: gallery.g1 },
-          { label: "Studio portrait", src: gallery.g2 },
-          { label: "Session aesthetic", src: gallery.g3 },
-          { label: "Editorial look", src: gallery.g4 },
-          { label: "Lifestyle vibe", src: gallery.g5 },
+          { label: "Hero shot 1", src: home.gallery[0] },
+          { label: "Studio portrait", src: home.gallery[1] },
+          { label: "Session aesthetic", src: home.gallery[2] },
+          { label: "Editorial look", src: home.gallery[3] },
+          { label: "Lifestyle vibe", src: home.gallery[4] },
         ]}
       />
       <Divider />

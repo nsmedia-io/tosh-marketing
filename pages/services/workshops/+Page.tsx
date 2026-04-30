@@ -3,7 +3,7 @@ import Divider from "@/components/Divider";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import TopicList from "@/components/TopicList";
 import MidCta from "@/components/MidCta";
-import { portraits } from "@/images.config";
+import { services } from "@/images.config";
 
 export default function Page() {
   return (
@@ -48,7 +48,7 @@ export default function Page() {
           <ImagePlaceholder
             label="Workshop photo"
             aspect="aspect-[4/5]"
-            src={portraits.speaking}
+            src={services.workshops.hero}
           />
         </div>
       </section>

@@ -4,7 +4,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 import PricingTier from "@/components/PricingTier";
 import MidCta from "@/components/MidCta";
 import { siteConfig } from "@/site.config";
-import { portraits } from "@/images.config";
+import { services } from "@/images.config";
 
 function CheckList({ items }: { items: string[] }) {
   return (
@@ -39,7 +39,7 @@ export default function Page() {
             <ImagePlaceholder
               label="Coaching photo"
               aspect="aspect-[4/5]"
-              src={portraits.coaching}
+              src={services.coaching.hero}
             />
             <div>
               <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">
@@ -153,7 +153,7 @@ export default function Page() {
             <ImagePlaceholder
               label="Business coaching"
               aspect="aspect-[4/5]"
-              src={portraits.vip}
+              src={services.coaching.vip}
             />
           </div>
 

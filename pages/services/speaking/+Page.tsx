@@ -2,7 +2,7 @@ import PageHero from "@/components/PageHero";
 import Divider from "@/components/Divider";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import MidCta from "@/components/MidCta";
-import { portraits } from "@/images.config";
+import { services } from "@/images.config";
 
 export default function Page() {
   const keynotes = [
@@ -41,7 +41,7 @@ export default function Page() {
             <ImagePlaceholder
               label="Speaking photo"
               aspect="aspect-[4/5]"
-              src={portraits.about1}
+              src={services.speaking.hero}
             />
             <div>
               <span className="text-xs font-semibold tracking-[0.3em] text-accent-green">

@@ -1,53 +1,64 @@
-// Unsplash placeholder images - will be replaced with client's actual photos
-// Using Unsplash source URLs with sizing params for dev/placeholder use
+// Asset map for client photos.
+//
+// Convention: every image lives in /public/ and is named <page>-<slot>.jpg.
+// To replace any image, drop a JPG into /public/ with the matching filename.
+// No code changes needed — Vite serves /public/* at the site root.
+//
+// Recommended source: long edge ~1600px, JPG ~80% quality.
+// Aspect ratios are enforced via CSS, so source aspect doesn't have to match.
 
-const PH = "photo-1534528741775-53994a69daeb"; // primary placeholder (verified working)
-
-// Verified working Unsplash photo IDs
-const WORKING = [
-  "photo-1604004555489-723a93d6ce74",
-  "photo-1589156191108-c762ff4b96ab",
-  "photo-1524504388940-b1c1722653e1",
-  "photo-1534528741775-53994a69daeb",
-  "photo-1531746020798-e6953c6e8e04",
-  "photo-1622495966027-e0173192c728",
-];
-
-const unsplash = (id: string, w = 800, h = 1000) =>
-  `https://images.unsplash.com/${id}?w=${w}&h=${h}&fit=crop&auto=format&q=80`;
-
-const pick = (i: number) => WORKING[i % WORKING.length];
-
-// Portrait-oriented images (3:4 / 4:5 aspect)
-export const portraits = {
-  hero1: unsplash(pick(0), 800, 1000),
-  hero2: unsplash(pick(1), 800, 1000),
-  about1: unsplash(pick(2), 800, 1000),
-  about2: unsplash(pick(3), 800, 1000),
-  session1: unsplash(pick(4), 800, 1000),
-  session2: unsplash(pick(5), 800, 1000),
-  coaching: unsplash(pick(0), 800, 1000),
-  vip: unsplash(pick(1), 800, 1000),
-  speaking: unsplash(pick(2), 800, 1000),
-  contact: unsplash(pick(3), 800, 1000),
+export const home = {
+  hero: "/home-hero.jpg",
+  gallery: [
+    "/home-gallery-1.jpg",
+    "/home-gallery-2.jpg",
+    "/home-gallery-3.jpg",
+    "/home-gallery-4.jpg",
+    "/home-gallery-5.jpg",
+  ],
 };
 
-// Square images (gallery strips)
-export const gallery = {
-  g1: unsplash(pick(0), 600, 600),
-  g2: unsplash(pick(1), 600, 600),
-  g3: unsplash(pick(2), 600, 600),
-  g4: unsplash(pick(3), 600, 600),
-  g5: unsplash(pick(4), 600, 600),
-  g6: unsplash(pick(5), 600, 600),
-  g7: unsplash(pick(0), 600, 600),
-  g8: unsplash(pick(1), 600, 600),
-  g9: unsplash(pick(2), 600, 600),
-  g10: unsplash(pick(3), 600, 600),
+export const about = {
+  portrait: "/about-portrait.jpg",
+  session: "/about-session.jpg",
+  teaching: "/about-teaching.jpg",
+  artistic: "/about-artistic.jpg",
+  galleryTop: [
+    "/about-gallery-top-1.jpg",
+    "/about-gallery-top-2.jpg",
+    "/about-gallery-top-3.jpg",
+    "/about-gallery-top-4.jpg",
+    "/about-gallery-top-5.jpg",
+  ],
+  galleryBottom: [
+    "/about-gallery-bottom-1.jpg",
+    "/about-gallery-bottom-2.jpg",
+    "/about-gallery-bottom-3.jpg",
+    "/about-gallery-bottom-4.jpg",
+    "/about-gallery-bottom-5.jpg",
+  ],
 };
 
-// Landscape images (16:9 / 4:3 aspect)
-export const landscapes = {
-  wide1: unsplash(pick(0), 1200, 800),
-  wide2: unsplash(pick(1), 1200, 800),
+export const services = {
+  overview: [
+    "/services-overview-1.jpg",
+    "/services-overview-2.jpg",
+    "/services-overview-3.jpg",
+    "/services-overview-4.jpg",
+    "/services-overview-5.jpg",
+  ],
+  coaching: {
+    hero: "/services-coaching-hero.jpg",
+    vip: "/services-coaching-vip.jpg",
+  },
+  speaking: {
+    hero: "/services-speaking-hero.jpg",
+  },
+  workshops: {
+    hero: "/services-workshops-hero.jpg",
+  },
+};
+
+export const contact = {
+  photo: "/contact-photo.jpg",
 };

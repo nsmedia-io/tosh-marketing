@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { siteConfig } from "@/site.config";
 
 const NAV_LINKS = [
   { label: "About", href: "/about" },
+  { label: "Interests", href: "/about/interests" },
   { label: "Services", href: "/services" },
+  { label: "Booking", href: "/booking" },
+  { label: "Etiquette", href: "/etiquette" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
@@ -39,9 +41,7 @@ export default function Nav() {
           </nav>
 
           <a
-            href={siteConfig.acuityUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/booking"
             className="hidden rounded-full bg-accent-green px-6 py-2.5 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)] focus:outline-none focus:ring-2 focus:ring-accent-green/50 focus:ring-offset-2 focus:ring-offset-bg-primary lg:inline-block"
           >
             BOOK A SESSION
@@ -73,9 +73,7 @@ export default function Nav() {
                 </a>
               ))}
               <a
-                href={siteConfig.acuityUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/booking"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-block rounded-full bg-accent-green px-6 py-2.5 text-center text-xs font-semibold tracking-[0.15em] text-text-heading"
               >

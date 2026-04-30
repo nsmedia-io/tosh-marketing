@@ -2,7 +2,7 @@ import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { siteConfig } from "@/site.config";
-import { portraits } from "@/images.config";
+import { contact } from "@/images.config";
 
 export default function Page() {
   return (
@@ -38,7 +38,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <ImagePlaceholder label="Contact page photo" aspect="aspect-[4/3]" src={portraits.contact} />
+            <ImagePlaceholder label="Contact page photo" aspect="aspect-[4/3]" src={contact.photo} />
             <div className="rounded-2xl border border-divider bg-bg-secondary p-6">
               <h3 className="font-serif text-lg text-text-heading">
                 Prefer to book directly?
@@ -47,9 +47,7 @@ export default function Page() {
                 Skip the form and schedule a session or discovery call right now.
               </p>
               <a
-                href={siteConfig.acuityUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/booking"
                 className="mt-4 inline-block rounded-full bg-accent-green px-6 py-2.5 text-xs font-semibold tracking-[0.15em] text-text-heading transition-all hover:shadow-[0_0_20px_rgba(45,106,79,0.3)]"
               >
                 BOOK NOW

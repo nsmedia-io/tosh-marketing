@@ -3,7 +3,7 @@ import Divider from "@/components/Divider";
 import PhotoGallery from "@/components/PhotoGallery";
 import MidCta from "@/components/MidCta";
 import { siteConfig } from "@/site.config";
-import { gallery } from "@/images.config";
+import { services } from "@/images.config";
 
 function ServiceCards() {
   const cards = [
@@ -83,11 +83,11 @@ export default function Page() {
 
       <PhotoGallery
         images={[
-          { label: "Workshop", src: gallery.g1 },
-          { label: "Coaching", src: gallery.g2 },
-          { label: "Speaking", src: gallery.g3 },
-          { label: "Teaching", src: gallery.g4 },
-          { label: "Events", src: gallery.g5 },
+          { label: "Workshop", src: services.overview[0] },
+          { label: "Coaching", src: services.overview[1] },
+          { label: "Speaking", src: services.overview[2] },
+          { label: "Teaching", src: services.overview[3] },
+          { label: "Events", src: services.overview[4] },
         ]}
       />
 
