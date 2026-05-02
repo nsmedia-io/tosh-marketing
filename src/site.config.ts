@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://tosh.com",
   ogImage: "/og-image.svg",
   acuityUrl: "https://tosh.acuityscheduling.com",
-  email: "hello@tosh.com",
+  email: "Natasha@NatashaZarre.com",
   location: "Columbus, OH & Available Virtually",
   socials: {
     instagram: "https://instagram.com",
